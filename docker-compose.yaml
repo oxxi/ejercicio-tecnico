@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nisum-prueba-tecnica-jose-ramos:
+    image: joseoxi/nisum-prueba-tecnica-jose-ramos:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/nisum-prueba-tecnica-jose-ramos
+    ports:
+      - "8080:8080"
